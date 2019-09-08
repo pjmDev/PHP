@@ -1,0 +1,334 @@
+﻿
+/*--------------------------------------------------Layout---------------------------------------------------*/
+
+		.page_all {width:100%; height:100%; margin:0 auto; text-align:center;} /*페이지 전체*/
+		
+		.boram_page {width:1100px; height:920px; margin:0 auto; text-align:center; display: inline-block; margin-top:17px; border-radius: 5px;}
+
+		.top {width:1100px; height:70px; margin:0 auto; text-align:left; display: inline-block;
+								background-color:white; margin-bottom:6px; border-radius: 5px;} /*top 로고, 계좌 문의 로그아웃 들어감*/
+								
+		.right {width:880px; height:590px; margin:0 auto; text-align:left; display: inline-block; float:left; margin-left:10px;
+					background-color:white; padding-left:10px; padding-top:10px; border-radius: 5px;} /*제품 목록*/
+
+		.left {width:200px; height:600px; margin:0 auto; text-align:left; display: inline-block; float:left;
+								background-color:white; border-radius: 5px;} /*제품 정보*/
+
+								
+		.bottom {width:1100px; height:195px; margin:0 auto; text-align:left; display: inline-block;
+						background-color:white; margin-top:10px; border-radius: 5px;} /*구매내역*/
+		
+		.bottom_2 {width:1100px; height:195px; margin:0 auto; text-align:left; display: inline-block;
+						background-color:white; margin-top:10px; border-radius: 5px;} /*구매내역*/
+
+/*----------------------------------------------------font-----------------------------------------------------*/
+
+		.DG {font-family:"Nato Sans CJK KR Medium";, Dotum; color:#111; font-size:22px;
+						float:left; line-height:70px; margin-left:10px;}
+		.account {font-family:"Nato Sans CJK KR Regular";, Dotum; color:#616161; font-size:15px; 
+						float:right; line-height:70px; margin-right:30px;} /*계좌*/
+		.product_search_location  {font-family:"Nato Sans CJK KR Regular";, Dotum; color:#999; font-size:17px;} /*검색창*/
+		.log_out {font-family:"Nato Sans CJK KR Medium";, Dotum; color:#858585; font-size:15px; 
+						float:right; line-height:70px; margin-right:30px;} /*로그아웃*/
+						
+			.log_out a:link {color:#858585; text-decoration:none;}	/*링크 텍스트 스타일*/
+			.log_out a:visited {color:#858585; text-decoration:none;}
+			.log_out a:hover {color:#224788; text-decoration:underline; } /*underline; 밑줄*/
+			
+		.inquire_button {font-family:"Nato Sans CJK KR Regular";, Dotum; color:white; font-size:15px;
+								float:left; line-height:31.5px;}
+		.product_name {width:360px; height:80px; font-family:"Nato Sans CJK KR Regular";, Dotum; color:#224788; font-size:15px;
+								float:left; line-height:80px; margin-left:25px; margin-top:10px;}
+								
+		.product_name span {cursor:pointer;}
+		.product_name span:hover {text-decoration:underline;}
+								
+			.product_name a:link {color:#224788; text-decoration:none;}	/*링크 텍스트 스타일*/
+			.product_name a:visited {color:#224788; text-decoration:none;}
+			.product_name a:hover {color:#224788; text-decoration:underline; } /*underline; 밑줄*/
+								
+		.product_price {width:70px; height:80px; font-family:"Nato Sans CJK KR Regular";, Dotum; color:#999999; font-size:15px;
+								float:left; line-height:80px; margin-left:20px; margin-top:10px;}
+		.product_quantity_1 {width:30px; height:80px; font-family:"Nato Sans CJK KR Regular";, Dotum; color:#999999; font-size:15px;
+								float:left; line-height:80px; margin-left:20px; margin-top:10px;} /*'수량' 텍스트*/
+		.product_quantity_2 {width:45px; height:80px; font-family:"Nato Sans CJK KR Regular";, Dotum; color:#999999; font-size:15px;
+								float:left; margin-left:5px; margin-top:10px;} /*input number*/
+								
+/*----------------------------------------------------objact-----------------------------------------------------*/
+
+		.boram_logo {width:205px; height:55px; float:left; background-image:url("/data/boram/boram_logo.png"); background-size:cover;
+								margin-left:15px; margin-top:8px;}
+		/*.list {width:40px; height:46px; float:left;  background-image:url("/data/boram/list_icon.png");
+				background-position: center; background-repeat: no-repeat; background-size:42px 42px;} /*목록 아이콘*/
+		.bookmark_set {width:40px; height:46px; float:left;  background-image:url("/data/boram/bookmark_icon.png");
+				background-position: center; background-repeat: no-repeat; background-size:42px 42px; margin-left:3px;  border-radius:5px;} /*즐겨찾기 아이콘*/
+		.bookmark_set_click {width:40px; height:46px; float:left;  background-image:url("/data/boram/bookmark_icon_click.png");
+				background-position: center; background-repeat: no-repeat; background-size:42px 42px; margin-left:3px;  border-radius:5px;}		
+		
+		
+		.product_search_location {width:820px; height:46px; background-color:#224788; margin-bottom:10px; margin-left:8px; float:left; border-radius: 3.5px;} /*검색창*/ 
+		.product_location {overflow-x:hidden; overflow-y:scroll; /*상하 스크롤바 생성*/ 
+									width:870px; height:523px; margin:0 auto; display: inline-block;}
+		.product {width:845px; height:100px; background-color:#f2f2f2; margin-bottom:10px; float:left; border-radius: 3.5px;} /*right 에 위치*/
+		.product_picture {width:110px; height:80px; background-image:url("/data/boram/picture_i.png"); background-size:cover; 
+									float:left; margin-top:10px; margin-left:10px; border-radius: 3.5px;}
+		
+		.inquire_button {width:64px; height:34px; background-color:#224788; margin-top:18px; margin-right:10px; 
+								padding-left:10px; float:right; border-radius: 3.5px;} /*문의 버튼*/
+		.inquire_button:hover {background-color:#1a3966;}
+							
+		.search_icon {width:35px; height:35px; float:right;  background-image:url("/data/boram/search_icon.png"); 
+				background-position: center; background-repeat: no-repeat; background-size:20px 21px; margin-top:5px; margin-right:8.5px;} /*돋보기*/
+				
+		.product_quantity_3 {width:14px; height:26px; background-color:#cccccc; float:left; margin-top:38px;} /*number 화살표*/
+		.count_up {width:14px; height:13px; background-image:url("/data/boram/count_up.png"); background-size:cover; }
+		.count_up:active {background-image:url("/data/boram/count_up_click.png");}
+		.count_down {width:14px; height:13px; background-image:url("/data/boram/count_down.png"); background-size:cover; }
+		.count_down:active {background-image:url("/data/boram/count_down_click.png");}
+		
+		
+		.bookmark {width:25px; height:25px; background-image:url("/data/boram/bookmark.png"); 
+							background-position: center; background-repeat: no-repeat; background-size:23px 22px;  float:left; margin-top:37px; margin-left:20px;} 
+		.bookmark_click {width:25px; height:25px; background-image:url("/data/boram/bookmark_click.png"); 
+							background-position: center; background-repeat: no-repeat; background-size:23px 22px;  float:left; margin-top:37px; margin-left:20px;}
+		
+		.bookmarka {width:25px; height:25px; background-image:url("/data/boram/bookmark.png"); 
+							background-position: center; background-repeat: no-repeat; background-size:23px 22px;  float:left; margin-top:37px; margin-left:20px;} 
+		.bookmark_clicka {width:25px; height:25px; background-image:url("/data/boram/bookmark_click.png"); 
+							background-position: center; background-repeat: no-repeat; background-size:23px 22px;  float:left; margin-top:37px; margin-left:20px;}
+		
+							
+		.buy_button {width:38px; height:30px; background-image:url("/data/boram/buy_button.png");  
+							background-position: center; background-repeat: no-repeat; background-size:36px 30px; 
+							margin-right:8.5px;float:left; margin-top:34px; margin-left:21px; border-radius: 3.5px;} /*장바구니*/
+		.buy_button:hover {background-image:url("/data/boram/buy_button_over.png");}
+		
+/*----------------------------------------------------input-----------------------------------------------------*/
+
+		.product_search_location input[type=text] {width:750px; height:36px; margin-top:3.5px; margin-left:3.5px; padding-left:10px; border-radius: 2px;
+																			font-family:"Nato Sans CJK KR Regular";, Dotum; color:#494949;font-size:16px; }	/*검색창*/
+		.product_search_location input[type=text] {outline-style:none; border:0.5px #fff solid;}	/*테두리 설정*/
+
+		.product_quantity_2 input[type=number]{width:35px; height:22px; margin-top:3.5px; margin-left:3.5px; padding-left:5px; border:1px solid #cccccc; border-radius: 2px;
+																			font-family:"Nato Sans CJK KR Regular";, Dotum; color:#494949;font-size:14px; margin-top:28px;} /*number*/
+																		
+
+																		
+/*------------------------------------------------------리스트 표------------------------------------------------*/
+
+			.list {width:180px; height:580px; margin:0 auto; text-align:left; display: inline-block; float:left;
+								background-color:white; margin-top:10px; margin-left:10px;
+					overflow-x:hidden; overflow-y:scroll;}
+			.list_borad {border-collapse: collapse; font-size:15px; display: inline-block;} /* 전체*/
+
+			.th {height:32px; background-color:#efefef; 
+			font-family:"Nato Sans CJK KR Medium";, Dotum; color:#777777; font-size:14px; text-align:left; text-indent:5px;} /*text-indent   들여쓰기*/
+			.th_a {width:150px;}  	/* 표 가로크기 */
+
+			.tr {height:30px; text-align:left; border-bottom: 1px solid #e0e0e0; text-indent:7px;
+			font-family:"Nato Sans CJK KR Regular";, Dotum; color:#858585; font-size:14px;}
+			
+			.tr_end {height:30px; text-align:left; text-indent:7px; margin-bottom:5px; 
+			font-family:"Nato Sans CJK KR Regular";, Dotum; color:#858585; font-size:14px;}
+			
+			.left a:link {color:#858585; text-decoration:none;}	/*링크 텍스트 스타일*/
+			.left a:visited {color:#858585; text-decoration:none;}
+			.left a:hover {color:#224788; text-decoration:underline; }
+			.left a:active {color:#224788; text-decoration:underline;} /*underline; 밑줄*/
+			
+
+			
+/*------------------------------------------------------하단 구매내역------------------------------------------------*/
+
+			.bottom_button_location {/*버튼 들어가는 영역*/
+												width:1080px;
+												height:30px; 
+												/*border:1px solid black;*/
+												margin:0 auto;
+												margin-top:10px;
+												text-align:left;
+												display: inline-block;
+												margin-top:5px;
+												}
+												
+			.breakdown_top_button {/*구매내역 버튼*/
+												width:120px;
+												height:30px;
+												/*border:1px solid black;*/
+												font-family:"Nato Sans CJK KR Regular";, Dotum; color:#224788; font-size:14px; text-align:center; line-height:28px;
+												background-color:#f2f2f2;
+												border-top-left-radius:5px;
+												border-top-right-radius:5px;
+												float:left;
+												margin-left:10px;
+												margin-top:4px;
+												}
+												
+			.complete_order_button {/*주문완료 버튼*/
+												width:120px;
+												height:30px;
+												/*border:1px solid black;*/
+												font-family:"Nato Sans CJK KR Regular";, Dotum; color:#ffffff; font-size:14px; text-align:center; line-height:28px;
+												background-color:#e5e5e5;
+												border-top-left-radius:5px;
+												border-top-right-radius:5px;
+												float:left;
+												margin-left:10px;
+												margin-top:4px;
+												cursor:pointer;
+												}
+												
+			.complete_order_button_2	 {/*주문완료 버튼*/
+												width:120px;
+												height:30px;
+												/*border:1px solid black;*/
+												font-family:"Nato Sans CJK KR Regular";, Dotum; color:#ffffff; font-size:14px; text-align:center; line-height:28px;
+												background-color:#e5e5e5;
+												border-top-left-radius:5px;
+												border-top-right-radius:5px;
+												float:left;
+												margin-left:10px;
+												margin-top:4px;
+												cursor:pointer;
+												}
+			
+			.b_blank {/*회색여백10px*/
+							width:1080px;
+							height:10px;
+							background-color:#f2f2f2;
+							margin-left:10px;
+							border-top-right-radius:5px;
+							border-bottom:1px solid #f2f2f2;
+							}
+			
+			.breakdown { /*주문상태 창*/
+								width:1080px;
+								height:135px;
+								/*border:1px solid black;*/
+								margin-left:10px;
+								text-align:left;
+								background-color:#f2f2f2;
+								border-bottom-left-radius:5px;
+								border-bottom-right-radius:5px;
+								display:inline-block;
+								}
+
+			.breakdown_table_location {/*주문상태 표 영역*/
+													width: 665px;
+													height: 120px;
+													margin-left:10px;
+													background-color:white;
+													overflow-x:hidden;overflow-y:scroll;
+													border:1px solid #d1d1d1;
+													float:left;
+													}
+													
+			.b_product_data {/*주문상태 표*/
+									width: 650px;
+									height: auto;
+									border-collapse: collapse;
+									}
+			
+			.b_tr_01 {/*주문상태 표 tr 홀*/
+						width: 650px;
+						height: 30px;
+						font-family:"Nato Sans CJK KR Regular";, Dotum; color:#858585; font-size:13px; text-align:left; line-height:29px;
+						background-color:#ffffff;
+						border-bottom:1px solid #e2e2e2;
+						}
+						
+			.b_tr_02 {/*주문상태 표 tr 짝*/
+						width: 650px;
+						height: 30px;
+						font-family:"Nato Sans CJK KR Regular";, Dotum; color:#858585; font-size:13px; text-align:left; line-height:29px;
+						background-color:#f4f4f4;
+						border-bottom:1px solid #e2e2e2;
+						}
+						
+			.b_td_01 { /*날짜*/
+							width:100px;
+							text-indent:20px;
+							/*border-right:1px solid #e2e2e2;*/
+							}
+			
+			.b_td_02 { /*제품이름*/
+							width:300px;
+							/*border-right:1px solid #e2e2e2;*/
+							}
+			
+			.b_td_03 { /*약국가*/
+							width:50px;
+							font-family:"Nato Sans CJK KR Regular";, Dotum; color:#224788; font-size:13px; text-align:left; line-height:29px;
+							/*border-right:1px solid #e2e2e2;*/
+							text-align:center;
+							}
+			
+			.b_td_04 { /*갯수*/
+							width:50px;
+							text-align:center;
+							}
+							
+			.b_td_05 {/*취소버튼 영역*/
+							width:30px;
+							/*border:1px solid blue;*/
+							text-align:center;
+						}
+							
+			.b_close_button {
+									width:16px;
+									height:16px;
+									margin-left:5px;
+									border:1px solid #cecece;
+									background-color:#e2e2e2;
+									border-radius:3.5px;
+									cursor:pointer;
+									}
+						
+			.b_close_button_x {
+										width:11px;
+										height:11px;
+										background-image:url("/data/boram/chatting/close_x.png");
+										background-position: center; background-repeat: no-repeat; background-size:100%;
+										margin-top:2.5px;
+										margin-left:2.5px;
+										}
+						
+			.final_price {
+							font-family:"Nato Sans CJK KR Regular";, Dotum; color:#224788; font-size:18px; text-align:left; line-height:45px;
+							width:150px;
+							height:45px;
+							background-color:white;
+							float:left;
+							border-radius:5px;
+							border:1px solid #e2e2e2;
+							margin-left:60px;
+							margin-top:35px;
+							text-align:center;
+							}
+							
+			.final_buy_button {
+										width:65px;
+										height:45px;
+										background-color:#224788;
+										float:left;
+										border-radius:5px;
+										margin-left:50px;
+										margin-top:35px;
+										cursor:pointer;
+										}
+			
+
+/*------------------------------------------------------하단 구매내역2(구매내역)------------------------------------------------*/
+
+		.deposit_1 {}
+		
+		.deposit_2 {}
+		
+		
+		
+		
+		
+		
+		
+		
+		
